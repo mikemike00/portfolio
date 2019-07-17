@@ -5,11 +5,11 @@ body {
     font-weight: 300;
 
 }
-
+/*========================START OF NAVBAR ==============================*/
 #main-nav {
 
     display: inline-block;
-    /*    position: fixed;*/
+/*        position: fixed;    ** mimo dzialania wg instrukcji, pasek ginie, po usunieciu komendy position, pasek sie pojawia, choc jest nieruchomy***/
     background: #ffffff;
     color: #1ac056;
     font-weight: 300;
@@ -19,31 +19,44 @@ body {
     font-size: 1rem;
 }
 
-
-
+/*========================END OF NAV BAR=====================*/
+/*===================START OF HEADER=======================*/
 .main-header-content {
     position: cover;
     position: center;
+    background:center;
     background-image: url("../img/header-background.jpg");
     width: auto;
     height: 100px;
     padding: 20%;
+    
 }
 
 h1 {
+    display:block;
+    position: center;
     font-family: 'Roboto', sans-serif;
     font-size: 5rem;
+    color: whitesmoke;
+    
 }
 
 span {
     color: green;
 
 }
-
-#aboutMe h2 {
-    text-align: center;
-    width: 100%
+.main-header-content h2{
     
+    display:block;
+    position: center;
+    color: whitesmoke;
+}
+/*=========================END OF HEADER==============*/
+/*================START OF ABOUT ME====================*/
+.mainContainerAbout h2 {
+    text-align: center;
+    width: 100%;
+    font-size:30px;
     font-weight: 300; 
     margin-top: 60px;
     margin-bottom: 35px;
@@ -52,9 +65,9 @@ span {
     background-color: #f9fcfe;
     padding: 0 80px 100px;
     width: 100%;
-    font-size: 30px;
-    
-    
+    font-weight: 300;
+    margin-top: 60px;
+    margin-bottom: 35px;
 }
 #aboutMe img{
     max-height: 350px;
@@ -72,4 +85,14 @@ span {
     float:left;
     position: center;
     max-width: 100%;
+}
+/*===================END of ABOUT ME=============*/
+/*========================START OF SKILLS================*/
+.mainContainerSkills h2{
+    display:inline-block;
+    position: center;
+}
+#skills figure, figcaption, p{
+    display: inline-block;
+    text-align: center;
 }
