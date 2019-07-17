@@ -9,29 +9,67 @@ body {
 #main-nav {
 
     display: inline-block;
-    position: fixed;
+    /*    position: fixed;*/
     background: #ffffff;
     color: #1ac056;
     font-weight: 300;
     text-decoration: none;
     text-align: right;
     width: 100%;
-}
-a:visited, a:link, a:hover
-{
-/*    color:none;*/
+    font-size: 1rem;
 }
 
 
-.main-header-content{
+
+.main-header-content {
     position: cover;
     position: center;
-    background-image:url("../img/header-background.jpg");
+    background-image: url("../img/header-background.jpg");
     width: auto;
-    height: auto;
-    padding: 30%;
+    height: 100px;
+    padding: 20%;
 }
-h1{
-    font-family: 'Roboto', sans-serif;
 
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 5rem;
+}
+
+span {
+    color: green;
+
+}
+
+#aboutMe h2 {
+    text-align: center;
+    width: 100%
+    
+    font-weight: 300; 
+    margin-top: 60px;
+    margin-bottom: 35px;
+}
+#aboutMe {
+    background-color: #f9fcfe;
+    padding: 0 80px 100px;
+    width: 100%;
+    font-size: 30px;
+    
+    
+}
+#aboutMe img{
+    max-height: 350px;
+    width: auto;
+    border: solid 15px white;
+    border-radius: 20%;
+}
+#aboutMe article{
+    width:50%;
+    float: left;
+    font-size: 20px;
+}
+#aboutMe figure{
+    margin: none;
+    float:left;
+    position: center;
+    max-width: 100%;
 }
