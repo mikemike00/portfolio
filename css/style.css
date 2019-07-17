@@ -1,1 +1,37 @@
-background-
+body {
+    background: #19820B;
+    font-family: 'IBM Plex Serif', serif;
+    color: #291f1a;
+    font-weight: 300;
+
+}
+
+#main-nav {
+
+    display: inline-block;
+    position: fixed;
+    background: #ffffff;
+    color: #1ac056;
+    font-weight: 300;
+    text-decoration: none;
+    text-align: right;
+    width: 100%;
+}
+a:visited, a:link, a:hover
+{
+/*    color:none;*/
+}
+
+
+.main-header-content{
+    position: cover;
+    position: center;
+    background-image:url("../img/header-background.jpg");
+    width: auto;
+    height: auto;
+    padding: 30%;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+
+}
