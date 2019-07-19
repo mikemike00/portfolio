@@ -1,5 +1,5 @@
 body {
-    background: #19820B;
+    background: #ffffff;
     font-family: 'IBM Plex Serif', serif;
     color: #291f1a;
     font-weight: 300;
@@ -9,31 +9,36 @@ body {
 #main-nav {
 
     display: inline-block;
-/*        position: fixed;    ** mimo dzialania wg instrukcji, pasek ginie, po usunieciu komendy position, pasek sie pojawia, choc jest nieruchomy***/
+        position: fixed;    
+/*    ** mimo dzialania wg instrukcji, pasek ginie, po usunieciu komendy position, pasek sie pojawia, choc jest nieruchomy***/
     background: #ffffff;
     color: #1ac056;
     font-weight: 300;
-    text-decoration: none;
     text-align: right;
+/*    text-decoration: none;*/
     width: 100%;
     font-size: 1rem;
+}
+#main-nav:hover{
+    background-color: #ffff;
 }
 
 /*========================END OF NAV BAR=====================*/
 /*===================START OF HEADER=======================*/
 .main-header-content {
-    position: cover;
+    
     position: center;
     background:center;
     background-image: url("../img/header-background.jpg");
+    position: cover;
     width: auto;
     height: 100px;
-    padding: 20%;
+    padding: 30%;
     
 }
 
 h1 {
-    display:block;
+/*    display:block;*/
     position: center;
     font-family: 'Roboto', sans-serif;
     font-size: 5rem;
@@ -47,7 +52,7 @@ span {
 }
 .main-header-content h2{
     
-    display:block;
+/*    display:block;*/
     position: center;
     color: whitesmoke;
 }
@@ -61,7 +66,8 @@ span {
     margin-top: 60px;
     margin-bottom: 35px;
 }
-#aboutMe {
+.mainContainerAbout {
+    
     background-color: #f9fcfe;
     padding: 0 80px 100px;
     width: 100%;
@@ -88,11 +94,106 @@ span {
 }
 /*===================END of ABOUT ME=============*/
 /*========================START OF SKILLS================*/
-.mainContainerSkills h2{
+#skills h2{
     display:inline-block;
-    position: center;
+    text-align: center;
+    width: 100%;
+    font-size:30px;
+    font-weight: 300; 
+    margin-top: 60px;
+    margin-bottom: 35px;
 }
-#skills figure, figcaption, p{
+#skills figure{
     display: inline-block;
     text-align: center;
 }
+
+/*===================END OF SKILLS===============*/
+/*=====================START OF CONTACT==================*/
+
+#contact{
+    background-color: #213b50;
+    color: #fff;
+    overflow: hidden;
+}
+.contact-data{
+    width: 50%;
+    float:left;
+}
+.contact-data h2{
+    text-align: left;
+    font-size: 38px;
+}
+.contact-data adress{
+    font-style: normal;
+    line-height: 25px;
+    margin: 72px 0;
+    
+}
+.contact-social-icons i{
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+    margin-right: 30px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 22px;
+    color:#fff;
+}
+.contact-social-icons i:hover{
+    border:1px solid #213b50;
+    background: #fff;
+    color:#213b50;
+}
+.contact-data a{
+    color: #1ac056;
+}
+
+.contact-form{
+    margin-top: 100px;
+    width: 100%;
+    float:left;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 0px solid #2b4a64;
+    background-color: #2b4a64;
+}
+input:focus{
+    background-color: #426684;
+    
+}
+textarea:focus{
+    background-color: #426684;
+    
+}
+#wyslij{
+    width: auto;
+    padding 15px 30px;
+    float: right;
+    text-transform: uppercase;
+    border: 1px solid #1ac056;
+    background-color: #1ac056;
+    color: #fff;
+    font-weight: 600;
+}
+#wyslij:hover{
+    background: #fff;
+    color:#1ac056;
+}
+
+/*
+.contact-social-icons i{
+    display: inline-block;
+    height: 38px;
+    width: 38px;
+    margin-right: 30px;
+    line-height: 38px;
+    text-align: center;
+    border: 1px solid #fff;
+    font-size: 22px;
+*/
+
+/*========PRZESUNIETE NA GORE BO INACZEJ NIE CHCIALO DZIALAC, POBIERALO KOLOR Z EMAILA====LINIA:133-148=============*/
+}
+
