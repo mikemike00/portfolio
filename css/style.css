@@ -1,3 +1,8 @@
+@media all and (max-width : 1200px);
+@media all and (max-width : 992px);
+@media all and (max-width : 768px);
+@media all and (max-width : 576px);
+
 body {
     background: #ffffff;
     font-family: 'IBM Plex Serif', serif;
@@ -21,7 +26,34 @@ body {
     font-size: 1rem;
     background: none;
 }
-
+.toggle{
+    display:none;
+}
+@media all and (max-width : 992px){
+    .toggle{
+        display: block;
+        background-color: #fff;
+        padding: 0 20px;
+        color: #1ac056;
+        font-size: 20px;
+        line-height: 60px;
+        text-decoration: none;
+        border: none;
+        text-align: right;
+    }
+    .toggle ul{
+        display: none;
+    }
+    #main-nav #drop:checked + ul{
+        display: block;
+    }
+    li{
+        display: block;
+        width: 100%;
+        padding: 20px;
+        text-align: right;
+    }
+}
 #main-nav a {
     color: aqua;
     object-position: top 0px;
@@ -293,4 +325,28 @@ textarea:focus {
 } 
 .fa {
     color: #1ac056;
+}
+/*======================END OF PORTFOLIO============================*/
+footer {
+    color: #fff;
+    background:#142634;
+    padding: 0 80px;
+    
+}
+footer p{
+    margin: 0;
+}
+@media all and (max-width: 1200px) {}
+@media all and (max-width: 992px){}
+    @media all and (max-width: 768px) {
+        section {
+            color: deeppink;
+            padding: 0 40px 50px;
+        }
+}
+@media all and (max-width: 576px) {
+    section {
+        color:aqua;
+        padding: 0 10px 30px;
+    }
 }
