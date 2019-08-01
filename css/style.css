@@ -1,6 +1,8 @@
+/*
 @media all and (max-width : 1200px);
 @media all and (max-width : 768px);
 @media all and (max-width : 576px);
+*/
 
 body {
     background: #ffffff;
@@ -87,20 +89,18 @@ body {
 
 
 .mainContainer {
+    position: relative;
     background-image: url("../img/header-background.jpg");
-    background-position: center;
+    background-size: cover;
+    height: 100vh;
 }
 
 .main-header-content {
-
-    position: center;
-    background: center;
-
-    position: cover;
-    width: auto;
-    height: 100px;
-    padding: 30%;
-
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 
@@ -373,7 +373,7 @@ textarea:focus {
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    right 0;
+    right: 0;
     padding: 5px;
 } 
 .fa {
