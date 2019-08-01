@@ -17,7 +17,19 @@
 
 <body>
     <div class="mainNavBar" id="main-nav">
-
+        <!--    =========================MENU Z W3schools=-------==================
+<div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Dropdown button
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="#">Link 1</a>
+      <a class="dropdown-item" href="#">Link 2</a>
+      <a class="dropdown-item" href="#">Link 3</a>
+    </div>
+  </div>
+</div>
+-->
         <!--
         <label class="toggle">Menu
             <checkbox id="drop">
@@ -85,88 +97,104 @@
     </section>
     <br>
 
-    <section id="skills">
-        <h2>Moje<span> Umiętności</span></h2>
-        <p>Umięjętności mam tak duże, że szkoda pytać. Dzwoń, pisz a dowiesz się wszystkiego. Standardowo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cum, dicta dolor, nesciunt delectus cupiditate ipsum sequi laboriosam atque minus.</p>
-        <div id="skills-icons">
-            <figure> <img src="./icons/css3.png" alt="css">
-                <br>
-                <figcaption>CSS</figcaption>
-            </figure>
-            <figure> <img src="./icons/html5.png" alt="html">
-                <br>
-                <figcaption>HTML</figcaption>
-            </figure>
-            <figure> <img src="./icons/jquery.png" alt="jq">
-                <br>
-                <figcaption>jQuery</figcaption>
-            </figure>
-            <figure> <img src="./icons/js.png" alt="js">
-                <br>
-                <figcaption>JavaScript</figcaption>
-            </figure>
-
-
-
+    <section class="container mainContainerSkills" id="skills">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Moje<span> Umiętności</span></h2>
+            </div>
+            <div class="col-sm-12 col-md-12">
+                <p>Umięjętności mam tak duże, że szkoda pytać. Dzwoń, pisz a dowiesz się wszystkiego. Standardowo Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi cum, dicta dolor, nesciunt delectus cupiditate ipsum sequi laboriosam atque minus.</p>
+                <div class="col-sm-12 col-md-8 col-lg-10">
+                    <div id="skills-icons">
+                        <figure> <img src="./icons/css3.png" alt="css">
+                            <br>
+                            <figcaption>CSS</figcaption>
+                        </figure>
+                        <figure> <img src="./icons/html5.png" alt="html">
+                            <br>
+                            <figcaption>HTML</figcaption>
+                        </figure>
+                        <figure> <img src="./icons/jquery.png" alt="jq">
+                            <br>
+                            <figcaption>jQuery</figcaption>
+                        </figure>
+                        <figure> <img src="./icons/js.png" alt="js">
+                            <br>
+                            <figcaption>JavaScript</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="portfolio">
-        <h2>Moje <span>portfolio</span></h2>
-        <div class="portfolio-items">
-            <div class="portfolio-item" id="portfolio-item-1">
-                <div class="item-mask">
-
-                </div>
+    <section class="container mainContainerPortfolio" id="portfolio">
+        <div class="row">
+            <div class="col-sm-12">
+                <h2>Moje <span>portfolio</span></h2>
             </div>
-            <div class="portfolio-item" id="portfolio-item-2">
-                <div class="item-content">
-                    <div class="item-mask">
-                        <div class="item-content-inner">
-                            <h3>OPIS</h3>
-                            <p>Opis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur recusandae delectus neque magni sapiente. Odio ad sed reiciendis libero necessitatibus!</p>
-                            <h4>Wykorzystano technologie:</h4>
-                            <p>HTML5, CSS, JS, RWD, jQuery, BOOTSTRAP</p>
-                            <i class="fa fa-link" aria-hidden="true"></i>
+            <div class="col-sm-12 col-md-12">
+                <div class="portfolio-items">
+                    <div class="portfolio-item" id="portfolio-item-1">
+                        <div class="item-mask">
+
+                        </div>
+                    </div>
+                    <div class="portfolio-item" id="portfolio-item-2">
+                        <div class="item-content">
+                            <div class="item-mask">
+                                <div class="item-content-inner">
+                                    <h3>OPIS</h3>
+                                    <p>Opis Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur recusandae delectus neque magni sapiente. Odio ad sed reiciendis libero necessitatibus!</p>
+                                    <h4>Wykorzystano technologie:</h4>
+                                    <p>HTML5, CSS, JS, RWD, jQuery, BOOTSTRAP</p>
+                                    <i class="fa fa-link" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio-item" id="portfolio-item-3">
+                        <div class="item-mask">
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="portfolio-item" id="portfolio-item-3">
-                <div class="item-mask">
-
-                </div>
-            </div>
         </div>
-
-
     </section>
 
     <section id="contact">
-        <div class="contact-data">
-            <h2> Michał <span>Grubski</span></h2>
-            <adress>
-                <ul>Kołomyje</ul>
-                <ul>ul.Ćwiartki 3/4</ul>
-                <ul>90-001</ul>
-                <ul>email: <a style="text-decoration:none" href="mailto:spamonly0000@gmail.com">spamonly0000@gmail.com</a></ul>
-                <ul>Telefon kontaktowy: <a style="text-decoration:none" href="callto:535225791">535225791</a></ul>
-            </adress>
-            <div class="contact-social-icons">
-                <a href="https://twitter.com/?lang=pl"> <i class="fab fa-twitter-square"></i></a>
-                <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-snapchat-square"></i></a>
+        <div class="row">
+            <div class="contact-data">
+                <div class="col-sm-2">
+                    <h2> Michał <span>Grubski</span></h2>
+                </div>
+                <div class="col-sm-12 col-md-12">
+                    <adress>
+                        <ul>ul.Ćwiartki 3/4  <br>
+                        90-001 Kołomyje  <br>
+                        <br>
+                        email: <a style="text-decoration:none" href="mailto:spamonly0000@gmail.com">spamonly0000@gmail.com</a> <br>
+                        Telefon kontaktowy: <a style="text-decoration:none" href="callto:535225791">535225791</a>
+                        </ul>
+                    </adress>
+
+                    <div class="contact-social-icons">
+                        <a href="https://twitter.com/?lang=pl"> <i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fab fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com/?hl=pl"><i class="fab fa-snapchat-square"></i></a>
+                    </div>
+
+
+                    <div class="contact-form">
+                        <input type="text" placeholder="Imię i nazwisko"><br>
+                        <input type="text" placeholder="adresik imejlowy"><br>
+                        <textarea placeholder="Co Ci chodzi po głowie?" cols="30" rows="5"></textarea><br>
+                        <input id="wyslij" type="submit" placeholder="Wyślij">
+                    </div>
+                </div>
             </div>
-
         </div>
-        <div class="contact-form">
-            <input type="text" placeholder="Imię i nazwisko"><br>
-            <input type="text" placeholder="adresik imejlowy"><br>
-            <textarea placeholder="Co Ci chodzi po głowie?" cols="30" rows="5"></textarea><br>
-            <input id="wyslij" type="submit" placeholder="Wyślij">
-        </div>
-
-
     </section>
     <footer>
         <p>Copyright © Michał Gie</p>
