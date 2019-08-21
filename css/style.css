@@ -22,10 +22,11 @@ body {
     color: #1ac056;
     font-weight: 300;
     text-align: right;
-/*    text-decoration: none;*/
+    text-decoration: none;
     width: 100%;
     font-size: 1rem;
     background: none;
+    z-index:100;
 }
 .toggle{
     display:none;
@@ -47,17 +48,21 @@ body {
     }
     #main-nav #drop:checked + ul{
         display: block;
+        text-decoration: none;
     }
+/*
     li{
         display: block;
         width: 100%;
         padding: 20px;
         text-align: right;
     }
+*/
 }
 #main-nav a {
     color: aqua;
     object-position: top 0px;
+    
 }
 
 #main-nav:hover {
@@ -67,7 +72,8 @@ body {
 }
 
 #main-nav a:hover {
-    background-color: black;
+    color: black;
+    text-decoration: none;
 }
 
 /*========================END OF NAV BAR=====================*/
@@ -105,7 +111,7 @@ body {
 
 
 h1 {
-    /*    display:block;*/
+        display:block;
     position: center;
     font-family: 'Roboto', sans-serif;
     font-size: 5rem;
@@ -120,7 +126,7 @@ span {
 
 .main-header-content h2 {
 
-    /*    display:block;*/
+        display:block;
     position: center;
     color: whitesmoke;
 }
@@ -205,7 +211,8 @@ span {
 }
 
 #skills figure, img {
-    display: inline-block;
+    display:inline-block;
+    margin: 2.1rem;
     text-align: center;
 }
 
@@ -324,7 +331,7 @@ textarea:focus {
 /*========PRZESUNIETE NA GORE BO INACZEJ NIE CHCIALO DZIALAC, POBIERALO KOLOR Z EMAILA====LINIA:133-148=============*/
 /*=================================END OF CONTACT=====================================*/
 /*==================================START OF PORTFOLIO====================================*/
-#portfolio h2{
+#portfolio_span{
     text-align: center;
     width: 100%;
     font-size: 30px;
@@ -348,12 +355,17 @@ textarea:focus {
 }
 #portfolio-item-1{
     background: url(../img/portfolio1.jpg);
+    width: 100%;
+    background-repeat: no-repeat;  
 }
 #portfolio-item-2{
     background: url(../img/portfolio2.jpg);
+    width: 100%;
+    background-repeat: no-repeat;  
 }
 #portfolio-item-3{
     background: url(../img/portfolio4.jpg);
+    width: 100%;
     background-repeat: no-repeat;  
 /*    ====================moja idea background-repeat====*/
 }
@@ -369,6 +381,7 @@ textarea:focus {
 .item-mask:hover{
     opacity: 1;
     transition: all 0.3s ease-in-out;
+    width:100%;
 }
 .item-content{
     border: 1px solid #fff;
@@ -377,7 +390,7 @@ textarea:focus {
     position:relative;
 }
 .item-content-inner{
-    position: absolute;
+    position: relative;
     top: 50%;
     transform: translateY(-50%);
     left: 0;
